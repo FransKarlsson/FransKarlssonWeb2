@@ -1,0 +1,61 @@
+// Ren css
+
+@mixin flexgeneral($position){
+    display: flex;  
+    justify-content: $position;
+    
+}
+
+@mixin background-color($bgc){
+    background-color: $bgc;
+}
+
+@mixin backbroundImg($link){
+    background-image: url($link);
+}
+
+@mixin fontSize($size){
+    font-size: $size;
+}
+
+@mixin fontFamily($font){
+    font-family: $font;
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+nav {
+
+    @include flexgeneral(space-evenly);
+    width: 100vw ;
+    height: 16vh;
+    background-color: bisque;
+}
+
+button {
+    @include background-color(red);
+    @include fontFamily(monospace);
+    @include fontSize(30px);
+    width: 10vw;
+    height: 90%;
+}
+
+main {
+    @include fontSize(60px);
+    @include fontFamily(sans-serif);
+    background-color:palevioletred;
+    height: 100vh;
+
+}
+
+footer {
+    @include backbroundImg("https://cdn.discordapp.com/attachments/689467540782710895/882951974675431424/RDT_20210902_1335204984141390250714471.jpg");
+    height: 10vh;
+    background-color: green;
+}
+

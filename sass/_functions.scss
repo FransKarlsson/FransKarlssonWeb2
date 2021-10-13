@@ -1,0 +1,18 @@
+@import "./variables";
+
+
+@mixin color($color){
+    background-color: $color;
+} 
+
+@mixin change_font_size($font) {
+    font-size: $font;
+}
+
+@mixin txtcolor($leaf_color) {
+    color: $leaf_color
+}
+
+@mixin font($best_font) {
+    font-family: $best_font
+}

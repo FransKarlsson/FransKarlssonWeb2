@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100vw;
+  height: 16vh;
+  background-color: bisque;
+}
+
+button {
+  background-color: red;
+  font-family: monospace;
+  font-size: 30px;
+  width: 10vw;
+  height: 90%;
+}
+
+main {
+  font-size: 60px;
+  font-family: sans-serif;
+  background-color: palevioletred;
+  height: 100vh;
+}
+
+footer {
+  background-image: url("https://cdn.discordapp.com/attachments/689467540782710895/882951974675431424/RDT_20210902_1335204984141390250714471.jpg");
+  height: 10vh;
+  background-color: green;
+}
+/*# sourceMappingURL=style.css.map */

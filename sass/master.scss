@@ -1,0 +1,12 @@
+@import "./variables";
+@import "./functions";
+
+body {
+    @include txtcolor($leaf_color);
+    @include color($redder);
+    @include font($best_font)
+}
+
+.test {
+    @include change_font_size($super_large);
+}
