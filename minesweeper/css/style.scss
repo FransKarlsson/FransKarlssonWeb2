@@ -40,13 +40,16 @@ img {
 }
 
 
-body {
-
+.all {
     background-image: url("background.png"); // Ger hemsidan en stillastående bakgrundsbilld.
     background-attachment:fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+body {
+
+
     
 }
 

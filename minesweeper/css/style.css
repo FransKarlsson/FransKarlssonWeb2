@@ -61,7 +61,7 @@ img {
   padding-top: 25px;
 }
 
-body {
+.all {
   background-image: url("background.png");
   background-attachment: fixed;
   background-position: center;
