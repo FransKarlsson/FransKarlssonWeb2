@@ -1,5 +1,6 @@
 @import 'functions';
-$bannerBlue: rgb(71, 68, 228);
+@import 'variables';
+
 
 
 
@@ -14,25 +15,41 @@ img {
     width: 50px;
 }
 
-.navbar {
+#navbar {
     @include flexgeneral(center);
-   
+    
     
     .container {
+        @include flexgeneral(center);
         width: 80%;
         flex-direction: row;
         @include roundCornersBottom(5px);
-        button {
-            
+        background-color: $bannerBlue;
+        .navButton {
+            @include defaultText;
+            border-radius: 2px;
+            margin-bottom: 3px;
+            padding:3px;
+            background-color: white;
             @include margin-lr (10px);
         }
-        background-color: $bannerBlue;
+        
     }
 }
 
+.sticky {
+    position: fixed; // Navbaren får denhär klassen när användaren skrollar ner tillräckligt mycket
+    top: 0 ;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 25px; // Ser till at hemsidan inte hoppar till när navbaren fassnar.
+}
+
+
 body {
 
-    background-image: url("background.png");
+    background-image: url("background.png"); // Ger hemsidan en stillastående bakgrundsbilld.
     background-attachment:fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,6 +58,8 @@ body {
 }
 
 .banner {
+    
+    margin-bottom: -1px; // Tar bort vita streck mellan bannern och navbaren
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -48,7 +67,9 @@ body {
     background-color: $bannerBlue;
     width: 100%;
     height: 10vh;
-    
+    img {
+        margin: 5px;
+    }
     .logo {
         width: 500px;
         margin-bottom: auto;
@@ -61,24 +82,28 @@ body {
     }
 }
 
-.container {
+.content {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
+
+
 .item {
     display: flex;
     justify-content:left;
     flex-direction: column;
+    padding-bottom: 20px;
     @include menyText();
     header {
+        margin-top:-1px; // Tar bort vita streck mellan headern och navbaren.
         background-color: $bannerBlue;
         @include menyText();
         @include roundCornersBottom(5px);
     }
     p {
-        background-color: chartreuse;
+        margin-top: 20px;
         @include defaultText();
     }
 }
