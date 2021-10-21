@@ -1,11 +1,6 @@
 @import 'functions';
 @import 'variables';
 
-
-
-
-
-
 * {
     margin:0;
     padding:0;
@@ -16,13 +11,11 @@ img {
 }
 
 #navbar {
-    @include flexgeneral(center);
-    
-    
+    @include flexgeneral(center, column);
+    align-items: center;    
     .container {
-        @include flexgeneral(center);
+        @include flexgeneral(center, row);
         width: 80%;
-        flex-direction: row;
         @include roundCornersBottom(5px);
         background-color: $bannerBlue;
         .navButton {
@@ -60,9 +53,7 @@ body {
 .banner {
     
     margin-bottom: -1px; // Tar bort vita streck mellan bannern och navbaren
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include flexgeneral(center, row);
     @include roundCornersBottom(5px);
     background-color: $bannerBlue;
     width: 100%;
@@ -75,25 +66,17 @@ body {
         margin-bottom: auto;
         margin-top: auto;
     }
-    p {
-        color:white;
-        font-size: xx-large;
-        font-family: arial;
-    }
+
 }
 
 .content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    @include flexgeneral(center, column);
     align-items: center;
 }
 
 
 .item {
-    display: flex;
-    justify-content:left;
-    flex-direction: column;
+    @include flexgeneral(left, column);
     padding-bottom: 20px;
     @include menyText();
     header {

@@ -14,6 +14,13 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #navbar .container {
@@ -23,11 +30,11 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 80%;
   border-radius: 0px 0px 5px 5px;
   background-color: #4744e4;
 }
@@ -67,13 +74,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   border-radius: 0px 0px 5px 5px;
   background-color: #4744e4;
   width: 100%;
@@ -88,12 +95,6 @@ body {
   width: 500px;
   margin-bottom: auto;
   margin-top: auto;
-}
-
-.banner p {
-  color: white;
-  font-size: xx-large;
-  font-family: arial;
 }
 
 .content {

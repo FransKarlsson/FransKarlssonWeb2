@@ -1,6 +1,7 @@
-@mixin flexgeneral($orientation){
+@mixin flexgeneral($orientation, $direction){
     display: flex;
-    justify-content: center;
+    justify-content: $orientation;
+    flex-direction: $direction;
 }
 
 @mixin margin-lr($bigness) {
